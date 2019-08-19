@@ -13,9 +13,6 @@ node {
             sh 'go get -u github.com/golang/dep/...'
             sh 'dep init'
             
-            stage 'Test'
-            sh 'go vet'
-            sh 'go test -cover'
             
             stage 'Build'
             sh 'go build .'
