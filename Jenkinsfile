@@ -16,6 +16,7 @@ node {
             
             stage 'Build'
             sh 'go build .'
+            echo 'SUCCESSFUL BUILD of GOLANG APPLICATION'
             
             stage 'Deploy'
             // Do nothing.
